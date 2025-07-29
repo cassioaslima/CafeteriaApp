@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Café Tapuió</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <!-- Body -->
+  <body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+         <!-- OBS:Mudar/Colocar Navbar com imagem -->
+         <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <!-- Logomarca -->
+            <a class="navbar-brand" href="index.html">
+              <img src="img\339e9bd72dbde5dba904cc29cf1e89f4.jpg" alt="Café Tapuió" width="40" height="34">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Home -->
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <!-- Cardápio -->
+                <li class="nav-item">
+                  <a class="nav-link" href="cardapio.html">Cardápio</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+         
+
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Container -->
+         <div class="container">
+            <div class="row align-items-start">
+                <!-- Form -->
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Buscar</label>
+                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                      </div>
+                </div>
+                <!-- Button -->
+                <div class="col">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    +
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">Cardápio - Adicionar Item</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <!-- Nome -->
+                          <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="nome" value="" placeholder="Nome">
+                          </div>
+                          <!-- Preço -->
+                          <div class="mb-3">
+                            <label for="preco" class="form-label">Preço</label>
+                            <input type="text" class="form-control" id="preco" value="" placeholder="Preço">
+                          </div>
+                          <!-- Descrição -->
+                          <div class="mb-3">
+                            <label for="descricao" class="form-label">Descrição</label>
+                            <textarea class="form-control" id="descricao" value="" rows="3"></textarea>
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+         </div>
+
+        <!-- Tabela -->
+         <div class="container my-5">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">Item</th>
+                      <th scope="col">Preço</th>
+                      <th scope="col">Descrição</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+             </table>
+         </div>
+    </main>
+     <!-- Footer -->
+    <footer>
+        <h1>ERA BOM UM ESPAÇO AQUI TAMBÉM</h1>
+        <footer class="text-center text-lg-start text-white" style="background-color: burlywood;">
+            <!-- Grid container -->
+            <div class="container p-4">
+              <!--Grid row-->
+              <div class="row my-4">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+        
+                  <div class="rounded-circle bg-white shadow-1-strong d-flex align-items-center justify-content-center mb-4 mx-auto" style="width: 150px; height: 150px;">
+                    <img src="img/339e9bd72dbde5dba904cc29cf1e89f4.jpg" height="70" alt=""
+                         loading="lazy" />
+                  </div>
+        
+                  <p class="text-center">Café e Café</p>
+        
+                  <ul class="list-unstyled d-flex flex-row justify-content-center">
+                    <li>
+                      <a class="text-white px-2" href="#!">
+                        <i class="fab fa-facebook-square"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-white px-2" href="#!">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="text-white ps-2" href="#!">
+                        <i class="fab fa-youtube"></i>
+                      </a>
+                    </li>
+                  </ul>
+        
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Café</h5>
+        
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Café denovo</h5>
+        
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>General information</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>About the shelter</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Statistic data</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Job</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Tenders</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+        
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                  <h5 class="text-uppercase mb-4">Contato</h5>
+        
+                  <ul class="list-unstyled">
+                    <li>
+                      <p><i class="fas fa-map-marker-alt pe-2"></i>Guarabira, Inferninho, Paraíba</p>
+                    </li>
+                    <li>
+                      <p><i class="fas fa-phone pe-2"></i>+ 01 234 567 89</p>
+                    </li>
+                    <li>
+                      <p><i class="fas fa-envelope pe-2 mb-0"></i>contact@example.com</p>
+                    </li>
+                  </ul>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+            <!-- Grid container -->
+        
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgb(205, 165, 113)">
+              © 2025 Copyright:
+              <a class="text-white" href="index.html">CaféTapuió.com</a>
+            </div>
+            <!-- Copyright -->
+          </footer>
+    </footer>
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- Source CardapioJS -->
+    <script src="src\cardapio.js"></script>
+  </body>
+</html>
+

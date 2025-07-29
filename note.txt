@@ -1,0 +1,2 @@
+Lembrar de mudar o diretório das imagens de img para assets\image
+Remover arias
